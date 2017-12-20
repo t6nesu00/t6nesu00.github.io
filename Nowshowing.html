@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <script type="text/javascript" src="js/nowshowing.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/nowshowing.css">
+ <link rel="stylesheet" type="text/css" href="styles/style1.css">
+
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="back">
+      <a href="index.html">
+        <span class="left"></span>
+      </a>
+    </div>
+
+<div class="title"><h1>NorthKino</h1>
+  </div>
+
+<div class="heading"><h1 class="css-typing">Now Showing</h1></div>
+
+
+
+<div class="row">
+  <div class="column">
+    <img src="images/1.jpg" height="555" width="355"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/2.jpg" height="555" width="355"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/3.jpg"  height="555" width="355" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/4.jpg"  height="555" width="355" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+
+<h1>Now  Showing</h1>
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/1.jpg" width="300" height="350" >
+      <div class="grid-row2-1">
+      <ul>
+        <h1>X-MEN: DAYS OF FUTURE</h1>
+        <h2>Action, Adventure</h2>
+        <button id="myBtns" onclick="openModal1();" >Book Now</button>
+
+<!-- The Modal -->
+<div id="myModals" class="modals">
+
+  <!-- Modal content -->
+  <div class="modal-contents">
+    <span class="closes"  onclick="closeModal1()">&times;</span>
+    <div id="form">
+    <form id="book_tickets">
+      <fieldset>
+        <legend style="color:black; font-size:200%;">Booking Details</legend>
+
+        <p style="color: black;">
+          <label for="movie_name">Movie</label>
+          <select id="movie_name" name="movie_name" required autofocus>
+            
+            <option value="Movie 1">X-men</option>
+            <option value="Movie 2">Ender's Game</option>
+            <option value="Movie 3">Pirates of Caribbean</option>
+            <option value="Movie 4">Transformers</option>
+          </select>
+        </p>
+
+        <p style="color:black;">
+          <label for="theaters">Theaters</label>
+          <select id="theaters" required>
+            
+            <option value="Theater 1">Theater 1</option>
+            <option value="Theater 2">Theater 2</option>
+            <option value="Theater 3">Theater 3</option>
+          </select>
+        </p>
+
+         <p style="color:black;">
+          <label for="City">City</label>
+          <select id="City" name="City" required autofocus>
+            <option></option>
+            <option value="City 1">Helsinki</option>
+            <option value="City 2">Oulu</option>
+            <option value="City 3">Turuku</option>
+            <option value="City 4">Tampere</option>
+            <option value="City 5">Rovaniemi</option>
+          </select>
+        </p>
+
+        <p style="color:black;">
+          <label for="date">Date<br/><span id="dateNote"></span></label>
+          <input type="date" name="date" id="date" min="today" required />
+        </p>
+
+        <p style="color:black;">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </p>
+
+        <p style="color:black;">
+          <label for="tickets_quantity"># Tickets</label>
+          <input type="number" min="1" name="tickets_quantity" id="tickets_quantity" required />
+        </p>
+ 
+        <p style="color:black;">
+          <label>Total Price</label>
+          <span id="total_price">(enter data first)</span>
+        </p>
+        <div id="submit_wrapper">
+         <a href="#openModal1"><button type="button">Book Tickets</button></a>
+          <div id="openModal1" class="modalDialog1">
+  <div>
+    <a href="#close1" title="Close" class="close1">X</a>
+    <div class="plane">
+  <div class="cockpit">
+    <h1>Screen</h1>
+  </div>
+  <div class="exit exit--front fuselage">
+    
+  </div>
+  <ol class="cabin fuselage">
+    <li class="row row--1">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="1A" />
+          <label for="1A">1A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1B" />
+          <label for="1B">1B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1C" />
+          <label for="1C">1C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" disabled id="1D" />
+          <label for="1D">Occupied</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1E" />
+          <label for="1E">1E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1F" />
+          <label for="1F">1F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--2">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="2A" />
+          <label for="2A">2A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2B" />
+          <label for="2B">2B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2C" />
+          <label for="2C">2C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2D" />
+          <label for="2D">2D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2E" />
+          <label for="2E">2E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2F" />
+          <label for="2F">2F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--3">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="3A" />
+          <label for="3A">3A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3B" />
+          <label for="3B">3B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3C" />
+          <label for="3C">3C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3D" />
+          <label for="3D">3D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3E" />
+          <label for="3E">3E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3F" />
+          <label for="3F">3F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--4">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="4A" />
+          <label for="4A">4A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4B" />
+          <label for="4B">4B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4C" />
+          <label for="4C">4C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4D" />
+          <label for="4D">4D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4E" />
+          <label for="4E">4E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4F" />
+          <label for="4F">4F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--5">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="5A" />
+          <label for="5A">5A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5B" />
+          <label for="5B">5B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5C" />
+          <label for="5C">5C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5D" />
+          <label for="5D">5D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5E" />
+          <label for="5E">5E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5F" />
+          <label for="5F">5F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--6">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="6A" />
+          <label for="6A">6A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6B" />
+          <label for="6B">6B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6C" />
+          <label for="6C">6C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6D" />
+          <label for="6D">6D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6E" />
+          <label for="6E">6E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6F" />
+          <label for="6F">6F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--7">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="7A" />
+          <label for="7A">7A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7B" />
+          <label for="7B">7B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7C" />
+          <label for="7C">7C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7D" />
+          <label for="7D">7D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7E" />
+          <label for="7E">7E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7F" />
+          <label for="7F">7F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--8">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="8A" />
+          <label for="8A">8A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8B" />
+          <label for="8B">8B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8C" />
+          <label for="8C">8C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8D" />
+          <label for="8D">8D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8E" />
+          <label for="8E">8E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8F" />
+          <label for="8F">8F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--9">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="9A" />
+          <label for="9A">9A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9B" />
+          <label for="9B">9B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9C" />
+          <label for="9C">9C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9D" />
+          <label for="9D">9D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9E" />
+          <label for="9E">9E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9F" />
+          <label for="9F">9F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--10">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="10A" />
+          <label for="10A">10A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10B" />
+          <label for="10B">10B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10C" />
+          <label for="10C">10C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10D" />
+          <label for="10D">10D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10E" />
+          <label for="10E">10E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10F" />
+          <label for="10F">10F</label>
+        </li>
+      </ol>
+    </li>
+  </ol>
+
+  
+  <div class="exit exit--back fuselage">
+    
+  </div>
+  <input type="button" name="Confirm" value="Confirm" style="margin-left: 90px;"  onclick="myFunction();">
+</div>
+  </div>
+</div>
+        </div>
+      </fieldset>
+    </form>
+    
+</div>
+      
+
+  </div>
+
+</div>
+
+
+        <p>Description: The X-Men send Wolverine to the past in a desperate effort<br>
+         to change history and prevent an event that results in doom for both humans and mutants.</p>
+
+        <li>Director: Bryan Singer</li>
+        <li>Cast: Patrick Stewart, Ian McKellen, Hugh Jackman</li>
+        <li>Duration: 2h 12min</li>
+        <li>Ticket Rate:1o£</li>
+
+      </ul>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/2.jpg" width="300" height="350" >
+       <div class="grid-row2-1">
+      <ul>
+        <h1>ENDER'S GAME</h1>
+        <h2>Action, Gantasy, Sci-Fi</h2>
+        <button id="myBtns2" onclick="openModal2();">Book Now</button>
+
+<!-- The Modal -->
+<div id="myModals2" class="modals2">
+
+  <!-- Modal content -->
+  <div class="modal-contents2">
+    <span class="closes2" onclick="closeModal2()">&times;</span>
+    <div id="form">
+    <form id="book_tickets">
+      <fieldset>
+        <legend style="color:black; font-size:200%;">Booking Details</legend>
+
+        <p style="color: black;">
+          <label for="movie_name">Movie</label>
+          <select id="movie_name" name="movie_name" required autofocus>
+            <option></option>
+            <option value="Movie 1">Movie 1</option>
+            <option value="Movie 2">Movie 2</option>
+            <option value="Movie 3">Movie 3</option>
+          </select>
+        </p>
+
+        <p style="color:black;">
+          <label for="theaters">Theaters</label>
+          <select id="theaters" required>
+            <option></option>
+            <option value="Theater 1">Theater 1</option>
+            <option value="Theater 2">Theater 2</option>
+            <option value="Theater 3">Theater 3</option>
+          </select>
+        </p>
+
+         <p style="color:black;">
+          <label for="City">City</label>
+          <select id="City" name="City" required autofocus>
+            <option></option>
+            <option value="City 1">Helsinki</option>
+            <option value="City 2">Oulu</option>
+            <option value="City 3">Turuku</option>
+          </select>
+        </p>
+
+        <p style="color:black;">
+          <label for="date">Date<br/><span id="dateNote"></span></label>
+          <input type="date" name="date" id="date" min="today" required />
+        </p>
+
+        <p style="color:black;">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </p>
+
+        <p style="color:black;">
+          <label for="tickets_quantity"># Tickets</label>
+          <input type="number" min="1" name="tickets_quantity" id="tickets_quantity" required />
+        </p>
+ 
+        <p style="color:black;">
+          <label>Total Price</label>
+          <span id="total_price">(enter data first)</span>
+        </p>
+        <div id="submit_wrapper">
+         <a href="#openModal2"><button type="button">Book Tickets</button></a>
+          <div id="openModal2" class="modalDialog2">
+  <div>
+    <a href="#close2" title="Close" class="close2">X</a>
+    <div class="plane">
+  <div class="cockpit">
+    <h1>Screen</h1>
+  </div>
+  <div class="exit exit--front fuselage">
+    
+  </div>
+  <ol class="cabin fuselage">
+    <li class="row row--1">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="1A" />
+          <label for="1A">1A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1B" />
+          <label for="1B">1B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1C" />
+          <label for="1C">1C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" disabled id="1D" />
+          <label for="1D">Occupied</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1E" />
+          <label for="1E">1E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1F" />
+          <label for="1F">1F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--2">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="2A" />
+          <label for="2A">2A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2B" />
+          <label for="2B">2B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2C" />
+          <label for="2C">2C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2D" />
+          <label for="2D">2D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2E" />
+          <label for="2E">2E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2F" />
+          <label for="2F">2F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--3">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="3A" />
+          <label for="3A">3A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3B" />
+          <label for="3B">3B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3C" />
+          <label for="3C">3C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3D" />
+          <label for="3D">3D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3E" />
+          <label for="3E">3E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3F" />
+          <label for="3F">3F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--4">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="4A" />
+          <label for="4A">4A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4B" />
+          <label for="4B">4B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4C" />
+          <label for="4C">4C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4D" />
+          <label for="4D">4D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4E" />
+          <label for="4E">4E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4F" />
+          <label for="4F">4F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--5">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="5A" />
+          <label for="5A">5A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5B" />
+          <label for="5B">5B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5C" />
+          <label for="5C">5C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5D" />
+          <label for="5D">5D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5E" />
+          <label for="5E">5E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5F" />
+          <label for="5F">5F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--6">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="6A" />
+          <label for="6A">6A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6B" />
+          <label for="6B">6B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6C" />
+          <label for="6C">6C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6D" />
+          <label for="6D">6D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6E" />
+          <label for="6E">6E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6F" />
+          <label for="6F">6F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--7">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="7A" />
+          <label for="7A">7A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7B" />
+          <label for="7B">7B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7C" />
+          <label for="7C">7C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7D" />
+          <label for="7D">7D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7E" />
+          <label for="7E">7E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7F" />
+          <label for="7F">7F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--8">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="8A" />
+          <label for="8A">8A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8B" />
+          <label for="8B">8B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8C" />
+          <label for="8C">8C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8D" />
+          <label for="8D">8D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8E" />
+          <label for="8E">8E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8F" />
+          <label for="8F">8F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--9">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="9A" />
+          <label for="9A">9A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9B" />
+          <label for="9B">9B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9C" />
+          <label for="9C">9C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9D" />
+          <label for="9D">9D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9E" />
+          <label for="9E">9E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9F" />
+          <label for="9F">9F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--10">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="10A" />
+          <label for="10A">10A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10B" />
+          <label for="10B">10B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10C" />
+          <label for="10C">10C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10D" />
+          <label for="10D">10D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10E" />
+          <label for="10E">10E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10F" />
+          <label for="10F">10F</label>
+        </li>
+      </ol>
+    </li>
+  </ol>
+  <div class="exit exit--back fuselage">
+    
+  </div>
+  <input type="button" name="Confirm" value="Confirm" style="margin-left: 90px;"  onclick="myFunction2();">
+</div>
+  </div>
+</div>
+        </div>
+      </fieldset>
+    </form>
+    
+</div>
+      
+
+  </div>
+
+</div>
+        <p id="para_2">Description: Young Wiggin is recruited by the International Military to lead the fight   <br>
+          against the Formics,a genocidal alien race which  nearly annihilated the human race in a<br> previous invasion.
+         </p>
+        <li>Director: Gavin Hood</li>
+        <li>Cast: Harrison Ford, Asa Buterfield, Hailee Steinfeld</li>
+        <li>Duration: 1h 54min</li>
+        <li>Ticket Rate:1o£</li>
+
+      </ul>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/3.jpg" width="300" height="350">
+      <div class="grid-row2-1">
+      <ul>
+        <h1>Pirates of the Caribbean:<br>
+        On Stranger Tides</h1>
+        <h2>Action, Adventure, Fantasy</h2>
+       <button id="myBtns3"  onclick="openModal3();">Book Now</button>
+
+<!-- The Modal -->
+<div id="myModals3" class="modals3">
+
+  <!-- Modal content -->
+  <div class="modal-contents3">
+    <span class="closes" onclick="closeModal3()">&times;</span>
+    <div id="form">
+    <form id="book_tickets">
+      <fieldset>
+        <legend style="color:black; font-size:200%;">Booking Details</legend>
+
+        <p style="color: black;">
+          <label for="movie_name">Movie</label>
+          <select id="movie_name" name="movie_name" required autofocus>
+            <option></option>
+            <option value="Movie 1">Movie 1</option>
+            <option value="Movie 2">Movie 2</option>
+            <option value="Movie 3">Movie 3</option>
+          </select>
+        </p>
+
+        <p style="color:black;">
+          <label for="theaters">Theaters</label>
+          <select id="theaters" required>
+            <option></option>
+            <option value="Theater 1">Theater 1</option>
+            <option value="Theater 2">Theater 2</option>
+            <option value="Theater 3">Theater 3</option>
+          </select>
+        </p>
+
+         <p style="color:black;">
+          <label for="City">City</label>
+          <select id="City" name="City" required autofocus>
+            <option></option>
+            <option value="City 1">Helsinki</option>
+            <option value="City 2">Oulu</option>
+            <option value="City 3">Turuku</option>
+          </select>
+        </p>
+
+        <p style="color:black;">
+          <label for="date">Date<br/><span id="dateNote"></span></label>
+          <input type="date" name="date" id="date" min="today" required />
+        </p>
+
+        <p style="color:black;">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </p>
+
+        <p style="color:black;">
+          <label for="tickets_quantity"># Tickets</label>
+          <input type="number" min="1" name="tickets_quantity" id="tickets_quantity" required />
+        </p>
+ 
+        <p style="color:black;">
+          <label>Total Price</label>
+          <span id="total_price">(enter data first)</span>
+        </p>
+        <div id="submit_wrapper">
+         <a href="#openModal3"><button type="button">Book Tickets</button></a>
+          <div id="openModal3" class="modalDialog3">
+  <div>
+    <a href="#close3" title="Close" class="close3">X</a>
+    <div class="plane">
+  <div class="cockpit">
+    <h1>Screen</h1>
+  </div>
+  <div class="exit exit--front fuselage">
+    
+  </div>
+  <ol class="cabin fuselage">
+    <li class="row row--1">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="1A" />
+          <label for="1A">1A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1B" />
+          <label for="1B">1B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1C" />
+          <label for="1C">1C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" disabled id="1D" />
+          <label for="1D">Occupied</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1E" />
+          <label for="1E">1E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1F" />
+          <label for="1F">1F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--2">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="2A" />
+          <label for="2A">2A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2B" />
+          <label for="2B">2B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2C" />
+          <label for="2C">2C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2D" />
+          <label for="2D">2D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2E" />
+          <label for="2E">2E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2F" />
+          <label for="2F">2F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--3">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="3A" />
+          <label for="3A">3A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3B" />
+          <label for="3B">3B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3C" />
+          <label for="3C">3C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3D" />
+          <label for="3D">3D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3E" />
+          <label for="3E">3E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3F" />
+          <label for="3F">3F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--4">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="4A" />
+          <label for="4A">4A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4B" />
+          <label for="4B">4B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4C" />
+          <label for="4C">4C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4D" />
+          <label for="4D">4D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4E" />
+          <label for="4E">4E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4F" />
+          <label for="4F">4F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--5">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="5A" />
+          <label for="5A">5A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5B" />
+          <label for="5B">5B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5C" />
+          <label for="5C">5C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5D" />
+          <label for="5D">5D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5E" />
+          <label for="5E">5E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5F" />
+          <label for="5F">5F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--6">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="6A" />
+          <label for="6A">6A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6B" />
+          <label for="6B">6B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6C" />
+          <label for="6C">6C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6D" />
+          <label for="6D">6D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6E" />
+          <label for="6E">6E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6F" />
+          <label for="6F">6F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--7">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="7A" />
+          <label for="7A">7A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7B" />
+          <label for="7B">7B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7C" />
+          <label for="7C">7C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7D" />
+          <label for="7D">7D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7E" />
+          <label for="7E">7E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7F" />
+          <label for="7F">7F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--8">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="8A" />
+          <label for="8A">8A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8B" />
+          <label for="8B">8B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8C" />
+          <label for="8C">8C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8D" />
+          <label for="8D">8D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8E" />
+          <label for="8E">8E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8F" />
+          <label for="8F">8F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--9">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="9A" />
+          <label for="9A">9A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9B" />
+          <label for="9B">9B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9C" />
+          <label for="9C">9C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9D" />
+          <label for="9D">9D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9E" />
+          <label for="9E">9E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9F" />
+          <label for="9F">9F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--10">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="10A" />
+          <label for="10A">10A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10B" />
+          <label for="10B">10B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10C" />
+          <label for="10C">10C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10D" />
+          <label for="10D">10D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10E" />
+          <label for="10E">10E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10F" />
+          <label for="10F">10F</label>
+        </li>
+      </ol>
+    </li>
+  </ol>
+  <div class="exit exit--back fuselage">
+    
+  </div>
+
+  <input type="button" name="Confirm" value="Confirm" style="margin-left: 90px;"  onclick="myFunction3();">
+</div>
+  </div>
+</div>
+        </div>
+      </fieldset>
+    </form>
+    
+</div>
+      
+
+  </div>
+
+</div>
+        <p id="para_2">Description: Jack Sparrow and Barbossa embark on a quest to find the elusive fountain of<br>
+           youth, only to discover that Blackbeard and his daughter are after it too.</p>
+        <li>Director: Rob Marshall</li>
+        <li>Cast: Johnny Depp, Penelope Cruz, Ian McShane</li>
+        <li>Duration: 2h 16min</li>
+        <li>Ticket Rate:1o£</li>
+
+      </ul>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/4.jpg"  width="300" height="350">
+      <div class="grid-row2-1">
+      <ul>
+        <h1>Transformers: Age of Extinction</h1>
+        <h2>Action, Adventure, Sci-Fi</h2>
+        <button id="myBtns"  onclick="openModal4();">Book Now</button>
+
+<!-- The Modal -->
+<div id="myModals4" class="modals4">
+
+  <!-- Modal content -->
+  <div class="modal-contents4">
+    <span class="closes4"  onclick="closeModal4()">&times;</span>
+    <div id="form">
+    <form id="book_tickets">
+      <fieldset>
+        <legend style="color:black; font-size:200%;">Booking Details</legend>
+
+        <p style="color: black;">
+          <label for="movie_name">Movie</label>
+          <select id="movie_name" name="movie_name" required autofocus>
+            <option></option>
+            <option value="Movie 1">Movie 1</option>
+            <option value="Movie 2">Movie 2</option>
+            <option value="Movie 3">Movie 3</option>
+          </select>
+        </p>
+
+        <p style="color:black;">
+          <label for="theaters">Theaters</label>
+          <select id="theaters" required>
+            <option></option>
+            <option value="Theater 1">Theater 1</option>
+            <option value="Theater 2">Theater 2</option>
+            <option value="Theater 3">Theater 3</option>
+          </select>
+        </p>
+
+         <p style="color:black;">
+          <label for="City">City</label>
+          <select id="City" name="City" required autofocus>
+            <option></option>
+            <option value="City 1">Helsinki</option>
+            <option value="City 2">Oulu</option>
+            <option value="City 3">Turuku</option>
+          </select>
+        </p>
+
+        <p style="color:black;">
+          <label for="date">Date<br/><span id="dateNote"></span></label>
+          <input type="date" name="date" id="date" min="today" required />
+        </p>
+
+        <p style="color:black;">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </p>
+
+        <p style="color:black;">
+          <label for="tickets_quantity"># Tickets</label>
+          <input type="number" min="1" name="tickets_quantity" id="tickets_quantity" required />
+        </p>
+ 
+        <p style="color:black;">
+          <label>Total Price</label>
+          <span id="total_price">(enter data first)</span>
+        </p>
+        <div id="submit_wrapper">
+         <a href="#openModal4"><button type="button">Book Tickets</button></a>
+          <div id="openModal4" class="modalDialog4">
+  <div>
+    <a href="#close4" title="Close" class="close4">X</a>
+    <div class="plane">
+  <div class="cockpit">
+    <h1>Screen</h1>
+  </div>
+  <div class="exit exit--front fuselage">
+    
+  </div>
+  <ol class="cabin fuselage">
+    <li class="row row--1">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="1A" />
+          <label for="1A">1A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1B" />
+          <label for="1B">1B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1C" />
+          <label for="1C">1C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" disabled id="1D" />
+          <label for="1D">Occupied</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1E" />
+          <label for="1E">1E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="1F" />
+          <label for="1F">1F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--2">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="2A" />
+          <label for="2A">2A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2B" />
+          <label for="2B">2B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2C" />
+          <label for="2C">2C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2D" />
+          <label for="2D">2D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2E" />
+          <label for="2E">2E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="2F" />
+          <label for="2F">2F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--3">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="3A" />
+          <label for="3A">3A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3B" />
+          <label for="3B">3B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3C" />
+          <label for="3C">3C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3D" />
+          <label for="3D">3D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3E" />
+          <label for="3E">3E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="3F" />
+          <label for="3F">3F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--4">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="4A" />
+          <label for="4A">4A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4B" />
+          <label for="4B">4B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4C" />
+          <label for="4C">4C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4D" />
+          <label for="4D">4D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4E" />
+          <label for="4E">4E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="4F" />
+          <label for="4F">4F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--5">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="5A" />
+          <label for="5A">5A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5B" />
+          <label for="5B">5B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5C" />
+          <label for="5C">5C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5D" />
+          <label for="5D">5D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5E" />
+          <label for="5E">5E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="5F" />
+          <label for="5F">5F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--6">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="6A" />
+          <label for="6A">6A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6B" />
+          <label for="6B">6B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6C" />
+          <label for="6C">6C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6D" />
+          <label for="6D">6D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6E" />
+          <label for="6E">6E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="6F" />
+          <label for="6F">6F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--7">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="7A" />
+          <label for="7A">7A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7B" />
+          <label for="7B">7B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7C" />
+          <label for="7C">7C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7D" />
+          <label for="7D">7D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7E" />
+          <label for="7E">7E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="7F" />
+          <label for="7F">7F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--8">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="8A" />
+          <label for="8A">8A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8B" />
+          <label for="8B">8B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8C" />
+          <label for="8C">8C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8D" />
+          <label for="8D">8D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8E" />
+          <label for="8E">8E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="8F" />
+          <label for="8F">8F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--9">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="9A" />
+          <label for="9A">9A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9B" />
+          <label for="9B">9B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9C" />
+          <label for="9C">9C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9D" />
+          <label for="9D">9D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9E" />
+          <label for="9E">9E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="9F" />
+          <label for="9F">9F</label>
+        </li>
+      </ol>
+    </li>
+    <li class="row row--10">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="10A" />
+          <label for="10A">10A</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10B" />
+          <label for="10B">10B</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10C" />
+          <label for="10C">10C</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10D" />
+          <label for="10D">10D</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10E" />
+          <label for="10E">10E</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="10F" />
+          <label for="10F">10F</label>
+        </li>
+      </ol>
+    </li>
+  </ol>
+  <div class="exit exit--back fuselage">
+    
+  </div>
+  <input type="button" name="Confirm" value="Confirm" style="margin-left: 90px;"  onclick="myFunction4();">
+</div>
+  </div>
+</div>
+        </div>
+      </fieldset>
+    </form>
+    
+</div>
+      
+
+  </div>
+
+</div>
+        <p>Description: Autobots must escape sight from a bounty hunter who has taken control  <br>
+          of the human serendipity: Unexpectedly, Optimus Prime and his remaining gang turn to  <br>
+          a mechanic, his daughter, and her back street racing boyfriend for help.</p>
+        <li>Director: Michael Bays</li>
+        <li>Cast: Mark Wahlberg, Nicola Peltz, Jack Reynor</li>
+        <li>Duration: 2h 45min</li>
+        <li>Ticket Rate:1o£</li>
+
+      </ul>
+    </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/1.jpg" width="200" height="300" onclick="currentSlide(1)">
+
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/2.jpg" width="200" height="300" onclick="currentSlide(2)" >
+
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/3.jpg" width="200;" height="300" onclick="currentSlide(3)" >
+
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/4.jpg" width="200" height="300"onclick="currentSlide(4)" >
+
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+
+
+</body>
+</html>

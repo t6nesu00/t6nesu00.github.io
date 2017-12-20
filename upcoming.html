@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Upcoming Movies</title>
+  <script type="text/javascript" src="js/upcoming.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/upcoming.css">
+ <link rel="stylesheet" type="text/css" href="styles/style1.css">
+
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="back">
+      <a href="index.html">
+        <span class="left"></span>
+      </a>
+    </div>
+
+<div class="title"><h1>NorthKino</h1>
+  </div>
+
+<div class="js-odoo"></div>
+
+
+
+<div class="row">
+  <div class="column">
+    <img src="Images/mollys_game.jpg" height="355" width="255"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+
+  </div>
+  <div class="column">
+    <img src="Images/jumanji.jpg" height="355" width="255"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Images/tomb_raider.jpg"  height="355" width="255" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Images/the_greatest_showman.jpg"  height="355" width="255" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+
+<h1>Upcoming</h1>
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="Images/mollys_game.jpg" width="300" height="300" >
+      <div class="grid-row2-1">
+      <ul>
+        <h1>MOLLY'S GAME</h1>
+        <h2>Biography, Drama</h2>
+        <input type="button" id="booking" value="Trailer">
+        <p id="para_2">Description: The true story of Molly Bloom, an Olympic-class skier who ran the world's <br>
+          most exclusive high-stakes poker game and became an FBI target.</p>
+        <li>Director:  Aaron Sorkin</li>
+        <li>Cast:  Jessica Chastain, Idris Elba, Kevin Costner</li>
+        <li>Release Date: January 26 2018</li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="Images/jumanji.jpg" width="300" height="300" >
+       <div class="grid-row2-1">
+      <ul>
+        <h1>JUMANJI</h1>
+        <h2>Action, Adventure, Comedy</h2>
+        <input type="button" id="booking" value="Trailer">
+        <p id="para_2">Description: Four teenagers discover an old video game console and are literally drawn <br>
+          into the game's jungle setting becoming the adult avatars they chose.</p>
+        <li>Director: Jake Kasdan</li>
+        <li>Cast: Dwayne Johnson, Karen Gellan, Kevin Hart</li>
+        <li>Release Date: 20 December 2017</li>
+
+      </ul>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="Images/tomb_raider.jpg" width="300" height="300">
+      <div class="grid-row2-1">
+      <ul>
+        <h1>TOMB RAIDER</h1>
+        <h2>Action, Adventure</h2>
+        <input type="button" id="booking" value="Trailer ">
+        <p id="para_2">Descriptio: Lara Croft, push herself beyond her limits when she finds herself on the <br>
+          island where her father disappeared.</p>
+        <li>Director: Roar Uthaug</li>
+        <li>Cast: Alicia Vikander, Hannah John-Kamen</li>
+        <li>Release Date: 16 March 2018</li>
+
+      </ul>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="Images/the_greatest_showman.jpg"  width="300" height="300">
+      <div class="grid-row2-1">
+      <ul>
+        <h1 id="heading">THE GREATEST SHOWMAN</h1>
+        <h2>Biography, Drama, Musical</h2>
+        <input type="button" id="booking" value="Trailer">
+        <p id="para_2">Description: The Greatest Showman tells of a visionary who rose from nothing to create<br>
+         a spectacle that became a worldwide sensation.</p>
+        <li>Director: Michael Gracey</li>
+        <li>Cast: Hugh Jackman, Michelle Williams</li>
+        <li>Release Date: 19 January 2018</li>
+
+      </ul>
+    </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="Images/mollys_game.jpg" width="200" height="300" onclick="currentSlide(1)">
+
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/jumanji.jpg" width="200" height="300" onclick="currentSlide(2)" >
+
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/tomb_raider.jpg" width="200;" height="300" onclick="currentSlide(3)" >
+
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/the_greatest_showman.jpg" width="200" height="300"onclick="currentSlide(4)" >
+
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+</body>
+</html>
